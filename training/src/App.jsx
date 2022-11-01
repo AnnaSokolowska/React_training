@@ -1,9 +1,13 @@
-import ComponentClass from "./components/componentClass/componentClass";
-import PureComponentClass from "./components/pureComponentClass/pureComponentClass";
-import ComponentFunc from "./components/ComponentFunc";
 
 import randomWords from 'random-words';
 import React from "react";
+
+import ComponentClass from "./components/componentClass/componentClass";
+import PureComponentClass from "./components/pureComponentClass/pureComponentClass";
+import ComponentFunc from "./components/ComponentFunc";
+import Button from './components/Button'
+
+
 
 
 
@@ -35,6 +39,7 @@ export default class App extends React.Component {
     console.clear();
     return (
       <header className="App-header">
+      <Button text="Press me"/>
       <ComponentClass string={this.state.str}/>
       <PureComponentClass string={this.state.pure}/>
       <ComponentFunc string={this.state.func}/>
